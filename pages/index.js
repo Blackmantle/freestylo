@@ -29,6 +29,7 @@ function Home({
         <div className={styles.searchContainer}>
           <form onSubmit={onFindVideos} className={styles.searchForm}>
             <input
+              id="searchVideos"
               type="search"
               value={channelName}
               onChange={onChannelNameChange}
