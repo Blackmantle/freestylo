@@ -1,0 +1,51 @@
+$light-blue: #0070f3
+
+.container
+  position: relative
+  border-radius: 4px
+  overflow: hidden
+
+.img
+  display: block
+  width: 100%
+  height: 100%
+
+.info
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  width: 100%
+  height: 100%
+  padding: 20px
+  top: 0
+  left: 0
+  background: black
+  opacity: 0
+  transition: opacity 0.3s ease
+
+.hovered
+  composes: info
+  opacity: 0.8
+
+.link
+  font-size: 18px
+  font-weight: bold
+  color: white
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+
+.favoriteBtn
+  position: absolute
+  bottom: 10px
+  right: 10px
+  width: 40px
+  height: 40px
+  background: transparent
+  border: none
+  cursor: pointer
+  svg
+    display: block
+  path
+    fill: white
